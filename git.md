@@ -89,7 +89,7 @@ vim pick->squash
 ```
 - 如何调整提交的顺序
 ```
-git rebase -i 
+git rebase -i master~3
 ```
 - git bisect 怎么用？
 > 运用二分查找的方式寻找bug
