@@ -32,19 +32,38 @@ git commit -m "comment"
 ```
 git push origin master
 ```
-- 查看已暂存和未暂存的修改
+-  查看已暂存和未暂存的修改
+> 比较工作目录中当前文件和暂存区域快照之间的差异
 ```
-
 git diff 
+```
+> 比较已暂存而尚未提交的内容
+```
 git diff --staged
 ```
 
-fetch pull merge都表示什么
+#### fetch pull merge都表示什么
+> fetch：是从远程获取最新版本到本地，不会自动merge
 
-创建分支
-合并分支
+> pull：是从远程获取最新版本并merge到本地
 
-如何解决合并时候的冲突
+#### 分支操作
+-  创建分支branchA
+```
+git branch branchA
+```
+- 切换到分支branchA
+```
+git checkout branchA
+```
+- 合并分支
+```
+git merge branchA
+```
+
+#### 如何解决合并时候的冲突
+> 使用git merge 或 git rebase合并分支的过程中，如果产生冲突，需要在本地手动的解决冲突的文件，然后继续合并
+
 git rebase 怎么用
 git rebase vs git merge
 
@@ -53,3 +72,5 @@ git rebase vs git merge
 如何调整提交的顺序
 
 git bisect 怎么用？
+```
+```
