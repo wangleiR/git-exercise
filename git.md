@@ -78,15 +78,19 @@ git rebase master 将master分支的内容合并到本地分支
 >  git merge合并时将master与branchA的文件合并，结果看起来就像一个新的"合并的提交"
 
 - 如何修改已经提交的代码
-> 
+```
+git commit --amend
+```
 - 如何将两次提交合并
 ```
 git rebase -i f1g1
-vim pick -> squash
+vim pick->squash
 合并注释
 ```
 - 如何调整提交的顺序
-
+```
+git rebase -i 
+```
 - git bisect 怎么用？
 > 运用二分查找的方式寻找bug
 ```
