@@ -5,6 +5,7 @@ Git 是把数据看作是对小型文件系统的一组快照。
 为了高效，如果文件没有修改，Git 不再重新存储该文件，而是只保留一个链接指向之前存储的文件。
 Git 对待数据更像是一个快照流。
 ```
+![](https://git-scm.com/book/en/v2/images/snapshots.png)
 #### 代码在Git 中都有哪些状态?
 ```
 modified:  已修改 表示修改了文件，但还没保存到数据库中。
@@ -12,6 +13,7 @@ staged: 已暂存 表示对一个已修改文件的当前版本做了标记，�
 committed: 已提交 表示数据已经安全的保存在本地数据库中。
 stashed: 储藏状态 可以获取工作目录的中间状态——并将它保存到一个未完结变更的堆栈中，随时可以重新应用。
 ```
+![](https://git-scm.com/book/en/v2/images/lifecycle.png)
 
 #### Git的常用操作
 
@@ -34,13 +36,12 @@ git push origin master
 ```
 - 查看已暂存和未暂存的修改
 ```
-
 git diff 
 git diff --staged
 ```
 
 fetch pull merge都表示什么
-
+![](http://www.ruanyifeng.com/blogimg/asset/2014/bg2014061202.jpg)
 创建分支
 合并分支
 
