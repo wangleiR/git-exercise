@@ -50,6 +50,8 @@ git diff --staged
 
 > pull：是从远程获取最新版本并merge到本地
 
+> merge: 合并分支
+
 #### 分支操作
 -  创建分支branchA
 ```
@@ -67,14 +69,24 @@ git merge branchA
 #### 如何解决合并时候的冲突
 > 使用git merge 或 git rebase合并分支的过程中，如果产生冲突，需要在本地手动的解决冲突的文件，然后继续合并
 
+```
+git rebase master 将master分支的内容合并到本地分支
+```
+- git rebase vs git merge
+> git rebase 合并时当前分支的提交次序在master之后
 
-git rebase 怎么用
-git rebase vs git merge
+>  git merge合并时将master与branchA的文件合并，结果看起来就像一个新的"合并的提交"
 
-如何修改已经提交的代码
-如何将两次提交合并
-如何调整提交的顺序
+- 如何修改已经提交的代码
+- 如何将两次提交合并
+- 如何调整提交的顺序
 
-git bisect 怎么用？
+- git bisect 怎么用？
+> 运用二分查找的方式寻找bug
+```
+$ git bisect start
+$ git bisect bad                 # Current version is bad
+$ git bisect good v2.6.13-rc2    # v2.6.13-rc2 is known to be good
+$ git bisect reset
 ```
 ```
