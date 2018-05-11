@@ -87,11 +87,11 @@ git rebase -i f1g1
 vim pick->squash
 合并注释
 ```
-- 如何调整提交的顺序
+#### 如何调整提交的顺序
 ```
 git rebase -i master~3
 ```
-- git bisect 怎么用？
+#### git bisect 怎么用？
 > 运用二分查找的方式寻找bug
 ```
 $ git bisect start
