@@ -79,6 +79,10 @@ git rebase master 将master分支的内容合并到本地分支
 
 #### 如何修改已经提交的代码
 ```
+git rebase -i 
+vim pick-> e
+edit the file
+git add .
 git commit --amend
 ```
 #### 如何将两次提交合并
