@@ -99,3 +99,7 @@ $ git bisect bad                 # Current version is bad
 $ git bisect good v2.6.13-rc2    # v2.6.13-rc2 is known to be good
 $ git bisect reset
 ```
+#### git回退
+```
+git reset
+```
